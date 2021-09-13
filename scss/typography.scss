@@ -1,0 +1,114 @@
+// Poppins & roboto from Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+//Font Variables
+$font-primary:'Montserrat', sans-serif;
+$font-secondary:'Open Sans', sans-serif;
+
+// CUSTOM FONTS
+*{
+    font-family: $font-primary;
+}
+.h1{
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 144px;
+    letter-spacing: -1.5px;
+}
+.h2{
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 90px;
+}
+.h3{
+    font-family:$font-primary;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+}
+.h4{
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.25px;
+}
+.h5{
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+.h6{
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+}
+.subtitle-1{
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+.subtitle-2{
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.body-1{
+    font-family:$font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+.body-2, label{
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+.caption{
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.text-button, .icon-button, .btn{
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.material-icons-round.md-18 { font-size: 18px; }
+.material-icons-round.md-24 { font-size: 24px; }
+.material-icons-round.md-30 { font-size: 30px; }
+.material-icons-round.md-36 { font-size: 36px; }
+.material-icons-round.md-48 { font-size: 48px; }
+
+

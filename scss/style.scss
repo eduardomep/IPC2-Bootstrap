@@ -1,0 +1,150 @@
+$primary: #403ebe;
+//Custom imports
+@import 'typography';
+//Bootstrap core
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/grid";
+// Bootstrap optionals
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//removing styles
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// variables
+$primary-color: #2422b6;
+
+.btn{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-inputs{
+    gap: 24px;
+}
+
+input{
+    height: 44px;
+}
+
+.icon-input{
+    position: relative;
+    input{
+        padding-left: 48px ;
+    }
+    span{
+        position: absolute;
+        bottom: 0;
+        color: $primary;
+        left: 12px;
+        bottom: 10px;
+    }
+}
+
+.waves{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.app-container{
+    display: flex;
+    .side-bar{
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        box-sizing: border-box;
+        padding: 16px;
+        ul{
+            gap: 6px;
+        }
+        .active{
+            background-color: darken($primary, 20%) !important;
+            color: white !important;
+        }
+        .menu-item{
+            border-radius: 10px;
+            padding: 12px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            p{
+                margin: 0;
+            }
+            color: lighten($primary, 50%);
+            &:hover{
+                background-color: darken($primary, 5%);
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .user-side-bar{
+            color: lighten($primary, 50%);
+            gap: 12px;
+            background-color: darken($primary, 10%);
+            width: 100%;
+            padding: 24px 12px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            &:hover{
+                background-color: darken($primary, 15%);
+            }
+            p{
+                margin: 0;
+            }
+            .logout{
+                margin-left: auto;
+            }
+        }
+    }
+    .content-container{
+        margin-left: 300px;
+        background-color: #F4F4F4 ;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+
+    }
+}
+.divider{
+    height: 2px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: lighten($primary, 10%);
+}
+
+@media (min-width: 1200px) {
+    .w-xl-100 {
+    width:100%!important;
+    }
+    .w-xl-75 {
+    width:75%!important;
+    }
+    .w-xl-50 {
+    width:50%!important;
+    }
+    .w-xl-25 {
+    width:25%!important;
+    }
+    .h-xl-100 {
+    height:100%!important;
+    }
+    .h-xl-75 {
+    height:75%!important;
+    }
+    .h-xl-50 {
+    height:50%!important;
+    }
+    .h-xl-25 {
+    height:25%!important;
+    }
+}
+
